@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const db = require('../database');
-const Fuse = require('fuse.js');
-const { tags } = require("fuse/lib/mustache");
+const Fuse = require('fuse');
+// const { tags } = require("fuse/lib/mustache");
 
 let q = ""
 router.get("/:query", async function(req, res) {
